@@ -32,7 +32,7 @@ struct TodoApp: App {
 						LoginScreen()
 							.transition(.move(edge: .leading))
 					case .home:
-						RegistrationScreen()
+						HomeScreen()
 							.transition(.move(edge: .bottom))
 					}
 				}

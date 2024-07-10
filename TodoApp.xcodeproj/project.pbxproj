@@ -19,6 +19,14 @@
 		E52186D42C3A88670036D2E4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52186D32C3A88670036D2E4 /* LoginScreen.swift */; };
 		E52186D72C3AB5170036D2E4 /* OnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52186D62C3AB5170036D2E4 /* OnboardingButton.swift */; };
 		E52186D92C3AB84A0036D2E4 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52186D82C3AB84A0036D2E4 /* LoginScreenViewModel.swift */; };
+		E5603E822C3E44AF00A808C8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E812C3E44AF00A808C8 /* HomeScreen.swift */; };
+		E5603E862C3E579D00A808C8 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E852C3E579D00A808C8 /* ListScreen.swift */; };
+		E5603E892C3E57B300A808C8 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E882C3E57B300A808C8 /* ProfileScreen.swift */; };
+		E5603E8B2C3E5D5D00A808C8 /* ListScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E8A2C3E5D5D00A808C8 /* ListScreenViewModel.swift */; };
+		E5603E8E2C3E65F300A808C8 /* NewItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E8D2C3E65F300A808C8 /* NewItemScreen.swift */; };
+		E5603E902C3E65FE00A808C8 /* NewItemScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E8F2C3E65FE00A808C8 /* NewItemScreenViewModel.swift */; };
+		E5603E922C3E751500A808C8 /* TextEditorWithPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E912C3E751500A808C8 /* TextEditorWithPlaceholder.swift */; };
+		E5603E942C3EA0A300A808C8 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E932C3EA0A300A808C8 /* ToDoModel.swift */; };
 		E5A8F8222C3BDF3100998638 /* RegistrationScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F8212C3BDF3100998638 /* RegistrationScreenViewModel.swift */; };
 		E5A8F8252C3D366100998638 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F8242C3D366100998638 /* UserModel.swift */; };
 		E5A8F82A2C3D389E00998638 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F8292C3D389E00998638 /* Codable+Extension.swift */; };
@@ -40,6 +48,14 @@
 		E52186D32C3A88670036D2E4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E52186D62C3AB5170036D2E4 /* OnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButton.swift; sourceTree = "<group>"; };
 		E52186D82C3AB84A0036D2E4 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		E5603E812C3E44AF00A808C8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E5603E852C3E579D00A808C8 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
+		E5603E882C3E57B300A808C8 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		E5603E8A2C3E5D5D00A808C8 /* ListScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenViewModel.swift; sourceTree = "<group>"; };
+		E5603E8D2C3E65F300A808C8 /* NewItemScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemScreen.swift; sourceTree = "<group>"; };
+		E5603E8F2C3E65FE00A808C8 /* NewItemScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemScreenViewModel.swift; sourceTree = "<group>"; };
+		E5603E912C3E751500A808C8 /* TextEditorWithPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorWithPlaceholder.swift; sourceTree = "<group>"; };
+		E5603E932C3EA0A300A808C8 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 		E5A8F8212C3BDF3100998638 /* RegistrationScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreenViewModel.swift; sourceTree = "<group>"; };
 		E5A8F8242C3D366100998638 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E5A8F8292C3D389E00998638 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
@@ -140,10 +156,45 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E5603E832C3E44B400A808C8 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E5603E812C3E44AF00A808C8 /* HomeScreen.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		E5603E842C3E578C00A808C8 /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E5603E852C3E579D00A808C8 /* ListScreen.swift */,
+				E5603E8A2C3E5D5D00A808C8 /* ListScreenViewModel.swift */,
+			);
+			path = ListScreen;
+			sourceTree = "<group>";
+		};
+		E5603E872C3E57A700A808C8 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E5603E882C3E57B300A808C8 /* ProfileScreen.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		E5603E8C2C3E65DD00A808C8 /* NewItemScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E5603E8D2C3E65F300A808C8 /* NewItemScreen.swift */,
+				E5603E8F2C3E65FE00A808C8 /* NewItemScreenViewModel.swift */,
+			);
+			path = NewItemScreen;
+			sourceTree = "<group>";
+		};
 		E5A8F8232C3D365600998638 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E5A8F8242C3D366100998638 /* UserModel.swift */,
+				E5603E932C3EA0A300A808C8 /* ToDoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +202,10 @@
 		E5A8F8262C3D386200998638 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E5603E8C2C3E65DD00A808C8 /* NewItemScreen */,
+				E5603E872C3E57A700A808C8 /* ProfileScreen */,
+				E5603E842C3E578C00A808C8 /* ListScreen */,
+				E5603E832C3E44B400A808C8 /* HomeScreen */,
 				E5A8F82B2C3D5D9400998638 /* StartUp */,
 				E52186D02C3A88310036D2E4 /* RegistrationScreen */,
 				E52186CD2C3A7AFE0036D2E4 /* LoginScreen */,
@@ -171,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				E5A8F8292C3D389E00998638 /* Codable+Extension.swift */,
+				E5603E912C3E751500A808C8 /* TextEditorWithPlaceholder.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,15 +331,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A8F82A2C3D389E00998638 /* Codable+Extension.swift in Sources */,
+				E5603E862C3E579D00A808C8 /* ListScreen.swift in Sources */,
 				E52186D72C3AB5170036D2E4 /* OnboardingButton.swift in Sources */,
 				E5A8F82D2C3D5DA800998638 /* AppRootManager.swift in Sources */,
+				E5603E902C3E65FE00A808C8 /* NewItemScreenViewModel.swift in Sources */,
+				E5603E892C3E57B300A808C8 /* ProfileScreen.swift in Sources */,
 				E5A8F8352C3D600C00998638 /* StartUpScreen.swift in Sources */,
 				E52186CF2C3A7B160036D2E4 /* OnboardingHeaderView.swift in Sources */,
+				E5603E922C3E751500A808C8 /* TextEditorWithPlaceholder.swift in Sources */,
 				E5A8F8252C3D366100998638 /* UserModel.swift in Sources */,
+				E5603E822C3E44AF00A808C8 /* HomeScreen.swift in Sources */,
+				E5603E8E2C3E65F300A808C8 /* NewItemScreen.swift in Sources */,
 				E52186D92C3AB84A0036D2E4 /* LoginScreenViewModel.swift in Sources */,
 				E5A8F8372C3D603700998638 /* BaseLottie.swift in Sources */,
 				E52186D22C3A885B0036D2E4 /* RegistrationScreen.swift in Sources */,
+				E5603E8B2C3E5D5D00A808C8 /* ListScreenViewModel.swift in Sources */,
 				E52186AF2C39C69F0036D2E4 /* TodoApp.swift in Sources */,
+				E5603E942C3EA0A300A808C8 /* ToDoModel.swift in Sources */,
 				E5A8F8222C3BDF3100998638 /* RegistrationScreenViewModel.swift in Sources */,
 				E52186D42C3A88670036D2E4 /* LoginScreen.swift in Sources */,
 			);

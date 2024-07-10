@@ -24,11 +24,8 @@ final class LoginScreenViewModel: ObservableObject {
 		guard validate() else { return }
 		
 		Auth.auth().signIn(withEmail: email, password: password) { result, error in
-			print(error?.localizedDescription ?? "Something Went Wrong")
 			
-			debugPrint(result)
 		}
-		
 	}
 	
 	func validate() -> Bool {
