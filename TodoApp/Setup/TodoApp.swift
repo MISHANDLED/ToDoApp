@@ -5,6 +5,7 @@
 //  Created by Devansh Mohata on 07/07/24.
 //
 
+import FirebaseAuth
 import FirebaseCore
 import SwiftUI
 
@@ -20,29 +21,31 @@ struct TodoApp: App {
 	@UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 	@StateObject private var viewModel: AppRootManager = .init()
 	
-    var body: some Scene {
-        WindowGroup {
-			NavigationView {
-				Group {
-					switch viewModel.appState {
-					case .splash:
-						StartUpScreen()
-							.transition(.opacity)
-					case .authentication:
-						LoginScreen()
-							.transition(.move(edge: .leading))
-					case .home:
-						HomeScreen()
+	var body: some Scene {
+		WindowGroup {
+			Group {
+				switch viewModel.appState {
+				case .splash:
+					StartUpScreen()
+						.transition(.opacity)
+				case .authentication:
+					LoginScreen()
+						.transition(.move(edge: .leading))
+				case .home:
+					if let userID = Auth.auth().currentUser?.uid {
+						HomeScreen(userID: userID)
 							.transition(.move(edge: .bottom))
-					}
-				}
-				.environmentObject(viewModel)
-				.onAppear {
-					DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak viewModel] in
-						viewModel?.checkLogInStatus()
+					} else {
+						EmptyView()
 					}
 				}
 			}
-        }
-    }
+			.environmentObject(viewModel)
+			.onAppear {
+				DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak viewModel] in
+					viewModel?.checkLogInStatus()
+				}
+			}
+		}
+	}
 }

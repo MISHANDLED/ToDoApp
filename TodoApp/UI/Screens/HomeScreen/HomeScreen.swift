@@ -22,12 +22,18 @@ struct HomeScreen: View {
 		}
 	}
 	
-	@State var tabMode: TabMode = .home
+	private let userID: String
+	@State var tabMode: TabMode
+	
+	init(userID: String) {
+		self.userID = userID
+		self.tabMode = .home
+	}
 	
 	var body: some View {
 		NavigationView {
 			TabView(selection: $tabMode) {
-				ListScreen()
+				ListScreenViewModel.createModule(for: userID)
 					.tabItem {
 						Label("Home", systemImage: "house.fill")
 					}
@@ -65,5 +71,5 @@ struct HomeScreen: View {
 }
 
 #Preview {
-	HomeScreen()
+	HomeScreen(userID: "FODFQFxjbSO5cyg9SKVuNMjP1Op1")
 }

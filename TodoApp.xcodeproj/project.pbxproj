@@ -19,6 +19,7 @@
 		E52186D42C3A88670036D2E4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52186D32C3A88670036D2E4 /* LoginScreen.swift */; };
 		E52186D72C3AB5170036D2E4 /* OnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52186D62C3AB5170036D2E4 /* OnboardingButton.swift */; };
 		E52186D92C3AB84A0036D2E4 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52186D82C3AB84A0036D2E4 /* LoginScreenViewModel.swift */; };
+		E551DC0F2C46F32C005B330A /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E551DC0E2C46F32C005B330A /* FirestoreService.swift */; };
 		E5603E822C3E44AF00A808C8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E812C3E44AF00A808C8 /* HomeScreen.swift */; };
 		E5603E862C3E579D00A808C8 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E852C3E579D00A808C8 /* ListScreen.swift */; };
 		E5603E892C3E57B300A808C8 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E882C3E57B300A808C8 /* ProfileScreen.swift */; };
@@ -27,6 +28,7 @@
 		E5603E902C3E65FE00A808C8 /* NewItemScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E8F2C3E65FE00A808C8 /* NewItemScreenViewModel.swift */; };
 		E5603E922C3E751500A808C8 /* TextEditorWithPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E912C3E751500A808C8 /* TextEditorWithPlaceholder.swift */; };
 		E5603E942C3EA0A300A808C8 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5603E932C3EA0A300A808C8 /* ToDoModel.swift */; };
+		E588B5D72C44FFC2000D950B /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588B5D62C44FFC2000D950B /* ToDoListItem.swift */; };
 		E5A8F8222C3BDF3100998638 /* RegistrationScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F8212C3BDF3100998638 /* RegistrationScreenViewModel.swift */; };
 		E5A8F8252C3D366100998638 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F8242C3D366100998638 /* UserModel.swift */; };
 		E5A8F82A2C3D389E00998638 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8F8292C3D389E00998638 /* Codable+Extension.swift */; };
@@ -48,6 +50,7 @@
 		E52186D32C3A88670036D2E4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E52186D62C3AB5170036D2E4 /* OnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButton.swift; sourceTree = "<group>"; };
 		E52186D82C3AB84A0036D2E4 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		E551DC0E2C46F32C005B330A /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		E5603E812C3E44AF00A808C8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		E5603E852C3E579D00A808C8 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
 		E5603E882C3E57B300A808C8 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		E5603E8F2C3E65FE00A808C8 /* NewItemScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemScreenViewModel.swift; sourceTree = "<group>"; };
 		E5603E912C3E751500A808C8 /* TextEditorWithPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorWithPlaceholder.swift; sourceTree = "<group>"; };
 		E5603E932C3EA0A300A808C8 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		E588B5D62C44FFC2000D950B /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
 		E5A8F8212C3BDF3100998638 /* RegistrationScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreenViewModel.swift; sourceTree = "<group>"; };
 		E5A8F8242C3D366100998638 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E5A8F8292C3D389E00998638 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
@@ -100,10 +104,11 @@
 		E52186AD2C39C69F0036D2E4 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5A8F8312C3D5FC100998638 /* Lottie */,
 				E5A8F8282C3D388C00998638 /* Extensions */,
+				E5A8F8312C3D5FC100998638 /* Lottie */,
 				E5A8F8232C3D365600998638 /* Models */,
 				E52186B42C39C6A30036D2E4 /* Preview Content */,
+				E551DC0D2C46F318005B330A /* Services */,
 				E52186CC2C3A789F0036D2E4 /* Setup */,
 				E5A8F8272C3D387F00998638 /* UI */,
 			);
@@ -152,8 +157,17 @@
 			children = (
 				E52186CE2C3A7B160036D2E4 /* OnboardingHeaderView.swift */,
 				E52186D62C3AB5170036D2E4 /* OnboardingButton.swift */,
+				E588B5D62C44FFC2000D950B /* ToDoListItem.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E551DC0D2C46F318005B330A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E551DC0E2C46F32C005B330A /* FirestoreService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E5603E832C3E44B400A808C8 /* HomeScreen */ = {
@@ -333,11 +347,13 @@
 				E5A8F82A2C3D389E00998638 /* Codable+Extension.swift in Sources */,
 				E5603E862C3E579D00A808C8 /* ListScreen.swift in Sources */,
 				E52186D72C3AB5170036D2E4 /* OnboardingButton.swift in Sources */,
+				E551DC0F2C46F32C005B330A /* FirestoreService.swift in Sources */,
 				E5A8F82D2C3D5DA800998638 /* AppRootManager.swift in Sources */,
 				E5603E902C3E65FE00A808C8 /* NewItemScreenViewModel.swift in Sources */,
 				E5603E892C3E57B300A808C8 /* ProfileScreen.swift in Sources */,
 				E5A8F8352C3D600C00998638 /* StartUpScreen.swift in Sources */,
 				E52186CF2C3A7B160036D2E4 /* OnboardingHeaderView.swift in Sources */,
+				E588B5D72C44FFC2000D950B /* ToDoListItem.swift in Sources */,
 				E5603E922C3E751500A808C8 /* TextEditorWithPlaceholder.swift in Sources */,
 				E5A8F8252C3D366100998638 /* UserModel.swift in Sources */,
 				E5603E822C3E44AF00A808C8 /* HomeScreen.swift in Sources */,
